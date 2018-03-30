@@ -274,7 +274,7 @@
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:lineSpacingExtra="18sp"
-                            android:text="@string/register_your_startup"
+                            android:text="@string/probono"
                             android:textColor="#293448"
                             android:textSize="18sp"
                             android:textStyle="bold" />

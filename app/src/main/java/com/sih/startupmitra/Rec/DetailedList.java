@@ -89,6 +89,11 @@ public class DetailedList extends AppCompatActivity {
                     Log.d("response", response.body().get(i).getCityLocation());
                     myPojo.setSchemeName(schemeList.get(i).getSchemeName());
                     myPojo.setHeadedBy(schemeList.get(i).getHeadedBy());
+                    myPojo.setSourceOfGrants(schemeList.get(i).getSourceOfGrants());
+                    myPojo.setSerialNumber(schemeList.get(i).getSerialNumber());
+                    myPojo.setSector(schemeList.get(i).getSector());
+                    myPojo.setRegLink(schemeList.get(i).getRegLink());
+                    myPojo.setLoanRange(schemeList.get(i).getLoanRange());
                     list.add(myPojo);
 
                 }
