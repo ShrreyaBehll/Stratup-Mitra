@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StartUpMitra</string>
+    <string name="slide_name_title">Welcome,</string>
+    <string name="subText">What shall we call your start up?</string>
+    <string name="name">Name</string>
+    <string name="eg_98fit">eg. 98fit</string>
+    <string name="pan_number">PAN Number</string>
+    <string name="pan_number_hint">eg. EP*****</string>
+</resources>
