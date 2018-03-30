@@ -6,4 +6,5 @@
     <color name="colorText">#8e8e8e</color>
     <color name="colorHeading">#283d65</color>
     <color name="btnColor">#2DC9D7</color>
+    <color name="white">#FFFF</color>
 </resources>

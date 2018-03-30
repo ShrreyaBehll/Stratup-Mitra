@@ -6,4 +6,116 @@
     <string name="eg_98fit">eg. 98fit</string>
     <string name="pan_number">PAN Number</string>
     <string name="pan_number_hint">eg. EP*****</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">FIrst Name</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="email">Email</string>
+    <string name="email_error">Email Error</string>
+    <string name="email_errore">email error details</string>
+    <string name="email_details">Email Details</string>
+    <string name="name_of_startup">StartUp Name</string>
+    <string name="enter_full_name">Enter the full name of your Startup</string>
+    <string name="choose_industry">Choose Industry</string>
+    <string name="choose_resp_industry">Choose your respective Industry</string>
+    <string name="eroor">Error</string>
+    <string name="choose_sector">Choose Sector</string>
+    <string name="reg_no">Registration No.</string>
+    <string name="not_valid">Not valid</string>
+    <string name="reg_date">Registration Date</string>
+    <string name="pan_no">StartUp Pan No.</string>
+    <string name="enter_pan">Enter your startup pan number</string>
+    <string name="enter_reg_no">Enter your Startup registration number</string>
+    <string name="choose_category">Choose Category</string>
+    <string name="choose_resp_category">Choose your respective category</string>
+    <string name="choose_resp_sector">Choose your respective sector</string>
+    <string name="enter_startup_reg">Enter Your Startup Registration No.</string>
+    <string name="enter_reg_date">Enter your Startup registration Date</string>
+
+    <string-array name="industry_items">
+
+
+        <item>Advertising</item>
+        <item> IT Services</item>
+        <item>Healthcare and Lifesciences</item>
+        <item>Aeronautics/AerospaceandDefence</item>
+        <item>Agriculture</item>
+        <item>AI</item>
+        <item>Analytics</item>
+        <item>Animation</item>
+        <item>AR/VR (Augmented + Virtual Reality)</item>
+        <item>Architecture/Interior Design</item>
+        <item>Art and Photography</item>
+        <item>Automotive</item>
+        <item>Chemicals</item>
+        <item>Telecommunication and Networking</item>
+        <item>Computer Vision</item>
+        <item>Construction</item>
+        <item>Dating/Matrimonial</item>
+        <item>Design</item>
+        <item>Education</item>
+        <item>Non- Renewable Energy</item>
+        <item>Renewable Energy</item>
+        <item>Green Technology</item>
+        <item>Enterprise Software</item>
+        <item>Events</item>
+        <item>Fashion</item>
+        <item>Finance Technology</item>
+        <item>Food and Beverages</item>
+        <item>Technology Hardware</item>
+        <item>Healthcare and Lifesciences</item>
+    </string-array>
+
+    <string-array name="health_list">
+        <item>Medical Devices/Biomedical</item>
+        <item>Health and Wellness</item>
+        <item>Pharmaceutical</item>
+        <item>Biotechnology</item>
+        <item>Healthcare Services</item>
+        <item>Healthcare IT</item>
+        <item>Healthcare Technology</item>
+    </string-array>
+
+    <string-array name="agriculture">
+
+        <item>Dairy Farming</item>
+        <item>Organic Agriculture</item>
+        <item>Agri-Tech</item>
+        <item>Food Processing</item>
+    </string-array>
+
+    <string-array name="it_services">
+
+        <item>IT Consulting</item>
+        <item>BPO</item>
+        <item>KPO</item>
+        <item>Web Development</item>
+        <item>Product development</item>
+        <item>Application Development</item>
+        <item>Testing</item>
+        <item>IT Management</item>
+        <item>Project Management</item>
+    </string-array>
+
+
+    <string-array name="categories">
+        <item>Consulting</item>
+        <item>E-Commerce</item>
+        <item>Consumer Internet</item>
+        <item>Hyperlocal</item>
+        <item>Government</item>
+        <item>Marketplace</item>
+        <item>Mobile</item>
+        <item>Peer to Peer</item>
+        <item>SaaS</item>
+        <item>Sharing Economy</item>
+        <item>Social Enterprise</item>
+        <item>Others</item>
+
+    </string-array>
+
+
 </resources>

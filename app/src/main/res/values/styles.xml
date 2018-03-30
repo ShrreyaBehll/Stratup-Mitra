@@ -8,4 +8,59 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="FormTextInputLayou" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/font_14</item>
+        <!--<item name="colorAccent">@color/border_color</item>-->
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <!--<item name="colorAccent">@color/dialog_error_color</item>-->
+        <!--<item name="colorControlNormal">@color/border_color</item>-->
+        <!--<item name="colorControlActivated">@color/border_color</item>-->
+        <!--<item name="colorControlNormal">@color/border_color</item>-->
+        <!--<item name="colorControlActivated">@color/border_color</item>-->
+        <!--<item name="colorControlHighlight">@color/border_color</item>-->
+
+    </style>
+
+    <style name="FormTextInputLayoutTheme" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+
+        <!--<item name="android:textSize">@dimen/font_14</item>-->
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <!--<item name="colorAccent">@color/dialog_error_color</item>-->
+        <!--<item name="colorControlNormal">@color/border_color</item>-->
+        <!--<item name="colorControlActivated">@color/border_color</item>-->
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <!--<item name="colorControlActivated">@color/border_color</item>-->
+        <!--<item name="colorControlHighlight">@color/border_color</item>-->
+
+    </style>
+
+    <style name="YourThemeForSingleInputFormActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Used for: input field background -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+
+        <!-- Used for: form progress color, status bar color (API 21+) -->
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+
+        <!-- Used for: title text color, error text color -->
+        <item name="android:textColorPrimary">@color/material_black_54</item>
+
+        <!-- Used for: details text color, step indicator text color -->
+        <item name="android:textColorSecondary">@color/material_black_54</item>
+
+        <!-- Used for: input text color, input widget color -->
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+
+        <!-- Used for: input widget color -->
+        <item name="android:textColorSecondaryInverse">@color/white</item>
+    </style>
+
+
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_16">16sp</dimen>
 </resources>
