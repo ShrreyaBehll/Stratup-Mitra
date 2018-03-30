@@ -9,7 +9,7 @@ import com.sih.startupmitra.R;
 import com.sih.startupmitra.Rec.Recomend;
 
 public class Dashboard extends AppCompatActivity {
-    CardView recommend;
+    CardView recommend,maps;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +19,8 @@ public class Dashboard extends AppCompatActivity {
 
     private void bindView() {
         recommend = findViewById(R.id.recommend);
+        maps = findViewById(R.id.maps);
         recommend.setOnClickListener(view -> startActivity(new Intent(this, Recomend.class)));
+        maps.setOnClickListener(view -> startActivity(new Intent(this, Maps.class)));
     }
 }
