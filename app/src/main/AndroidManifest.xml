@@ -21,7 +21,6 @@
             <!-- </intent-filter> -->
         </activity>
         <activity android:name=".individual_register.RegisterAdhar" />
-        <activity android:name=".ProfileActivity.ProfileActivity" />
         <activity android:name=".individual_register.StartupRegisterActivity"
             android:theme="@style/YourThemeForSingleInputFormActivity">
             <intent-filter>
@@ -31,7 +30,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".individual_register.RegisterAdhar" />
 
         <service android:name=".fcm.MyFirebaseMessagingService">
             <intent-filter>
@@ -46,6 +44,7 @@
 
         <activity android:name=".landing.Dashboard" />
         <activity android:name=".Rec.Recomend" />
+        <activity android:name=".ProfileActivity.ProfileActivity" />
         <activity android:name=".Rec.DetailedList"></activity>
     </application>
 
