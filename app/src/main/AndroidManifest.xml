@@ -18,7 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".individual_register.RegisterAdhar"></activity>
+        <activity android:name=".individual_register.RegisterAdhar" />
 
         <service android:name=".fcm.MyFirebaseMessagingService">
             <intent-filter>
@@ -31,7 +31,8 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".landing.Dashboard"></activity>
+        <activity android:name=".landing.Dashboard" />
+        <activity android:name=".recommend.Recommend"></activity>
     </application>
 
 </manifest>
