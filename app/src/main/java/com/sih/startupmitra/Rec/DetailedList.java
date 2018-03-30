@@ -3,9 +3,14 @@ package com.sih.startupmitra.Rec;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.widget.LinearLayout;
 
 import com.sih.startupmitra.R;
+import com.sih.startupmitra.adapter.CustomBlogAdapter;
 import com.sih.startupmitra.api.ApiClient;
 import com.sih.startupmitra.api.GeneralAPI;
 import com.sih.startupmitra.pojo.MyPojo;
@@ -20,6 +25,7 @@ import retrofit2.Response;
 public class DetailedList extends AppCompatActivity {
     Intent getData;
     List<MyPojo> list;
+    RecyclerView recycler_view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +36,7 @@ public class DetailedList extends AppCompatActivity {
     }
 
     private void intent() {
-        list = new ArrayList<>();
+        recycler_view = findViewById(R.id.recycler_view);
         getData = getIntent();
         Log.d("getIntent", String.valueOf(getData.getIntExtra("name", 0)));
         getDataToRecycclerView(getData);
@@ -54,27 +60,51 @@ public class DetailedList extends AppCompatActivity {
         }
         if (getData.getIntExtra("collateral", 0) == 1) {
             col = "yes";
-        } else if (getData.getIntExtra("collateral", 0) == 1) {
+        } else if (getData.getIntExtra("collateral", 0) == 2) {
             col = "no";
         }
-        Log.d("onResponse",col);
-        Log.d("onResponse",sec);
+        Log.d("onResponse", String.valueOf(getData.getIntExtra("name", 0)));
+        Log.d("onResponse", String.valueOf(getData.getIntExtra("collateral", 0)));
+        Log.d("onResponse", String.valueOf(col));
+        Log.d("onResponse", String.valueOf(sec));
+        Log.d("onResponse", String.valueOf(getData.getStringExtra("loan")));
 
         GeneralAPI generalAPI = ApiClient.getClient().create(GeneralAPI.class);
-        Call<MyPojo> call = generalAPI.getData(sec, Integer.parseInt(getData.getStringExtra("loan")), col);
-        call.enqueue(new Callback<MyPojo>() {
+        Call<List<MyPojo>> call = generalAPI.getData(sec, (getData.getStringExtra("loan")), col);
+        call.enqueue(new Callback<List<MyPojo>>() {
             @Override
-            public void onResponse(Call<MyPojo> call, Response<MyPojo> response) {
-                   try{
-                   Log.d("onResponse",response.body().getScheme_name());
-                   Log.d("onResponse",response.body().getCity_location());
-                   Log.d("onResponse",response.body().getCollateral());  }catch (Exception e){
-                       
-                   }
+            public void onResponse(Call<List<MyPojo>> call, Response<List<MyPojo>> response) {
+
+                assert response.body() != null;
+//                Log.d("onResponse", response.body().toString());
+                list = new ArrayList<>();
+                List<MyPojo> schemeList = null;
+                MyPojo myPojo;
+                assert response.body() != null;
+                schemeList = response.body();
+                for (int i = 0; i < response.body().size(); i++) {
+                    assert response.body() != null;
+                     myPojo = new MyPojo();
+                    Log.d("response", response.body().get(i).getSchemeName());
+                    Log.d("response", response.body().get(i).getCityLocation());
+                    myPojo.setSchemeName(schemeList.get(i).getSchemeName());
+                    myPojo.setHeadedBy(schemeList.get(i).getHeadedBy());
+                    list.add(myPojo);
+
+                }
+                CustomBlogAdapter customBlogAdapter = new CustomBlogAdapter(DetailedList.this,list);
+                RecyclerView.LayoutManager recycelrviewAdapterManager = new LinearLayoutManager(DetailedList.this);
+                DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(recycler_view.getContext(), DividerItemDecoration.VERTICAL);
+                recycler_view.addItemDecoration(dividerItemDecoration);
+                recycler_view.setLayoutManager(recycelrviewAdapterManager);
+                recycler_view.setAdapter(customBlogAdapter);
+
+
             }
 
             @Override
-            public void onFailure(Call<MyPojo> call, Throwable t) {
+            public void onFailure(Call<List<MyPojo>> call, Throwable t) {
+                Log.d("onResponse", t.getLocalizedMessage());
 
             }
         });

@@ -24,20 +24,21 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
 
-    private static final String BASE_URL = "http://jashanpreet.com/startup_mitra/";
+    private static final String BASE_URL = "http://jashanpreet.com/";
     private static Retrofit retrofit = null;
-    private static Context context;
 
-    public static Retrofit getClient() {
+    public static Retrofit getClient() {           
 
-        if (retrofit == null) {
+        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
+        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+        OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
 
-            retrofit = new Retrofit.Builder()
-                    .baseUrl(BASE_URL)
-                    .client(new OkHttpClient())
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build();
-        }
+
+        retrofit = new Retrofit.Builder()
+                .baseUrl(BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .client(client)
+                .build();
         return retrofit;
 
     }

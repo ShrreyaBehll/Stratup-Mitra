@@ -1,142 +1,130 @@
 package com.sih.startupmitra.pojo;
 
-public class MyPojo
-{
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class MyPojo {
+
+    @SerializedName("serial_number")
+    @Expose
+    private String serialNumber;
+    @SerializedName("scheme_name")
+    @Expose
+    private String schemeName;
+    @SerializedName("headed_by")
+    @Expose
+    private String headedBy;
+    @SerializedName("sector")
+    @Expose
     private String sector;
-
-    private String headed_by;
-
-    private String source_of_grants;
-
-    private String reg_link;
-
+    @SerializedName("loan_range")
+    @Expose
+    private String loanRange;
+    @SerializedName("collateral")
+    @Expose
     private String collateral;
-
-    private String scheme_name;
-
+    @SerializedName("city_location")
+    @Expose
+    private String cityLocation;
+    @SerializedName("source_of_grants")
+    @Expose
+    private String sourceOfGrants;
+    @SerializedName("lattitude")
+    @Expose
     private String lattitude;
-
+    @SerializedName("longitude")
+    @Expose
     private String longitude;
+    @SerializedName("reg_link")
+    @Expose
+    private String regLink;
 
-    private String city_location;
+    public String getSerialNumber() {
+        return serialNumber;
+    }
 
-    private String loan_range;
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
 
-    private String serial_number;
+    public String getSchemeName() {
+        return schemeName;
+    }
 
-    public String getSector ()
-    {
+    public void setSchemeName(String schemeName) {
+        this.schemeName = schemeName;
+    }
+
+    public String getHeadedBy() {
+        return headedBy;
+    }
+
+    public void setHeadedBy(String headedBy) {
+        this.headedBy = headedBy;
+    }
+
+    public String getSector() {
         return sector;
     }
 
-    public void setSector (String sector)
-    {
+    public void setSector(String sector) {
         this.sector = sector;
     }
 
-    public String getHeaded_by ()
-    {
-        return headed_by;
+    public String getLoanRange() {
+        return loanRange;
     }
 
-    public void setHeaded_by (String headed_by)
-    {
-        this.headed_by = headed_by;
+    public void setLoanRange(String loanRange) {
+        this.loanRange = loanRange;
     }
 
-    public String getSource_of_grants ()
-    {
-        return source_of_grants;
-    }
-
-    public void setSource_of_grants (String source_of_grants)
-    {
-        this.source_of_grants = source_of_grants;
-    }
-
-    public String getReg_link ()
-    {
-        return reg_link;
-    }
-
-    public void setReg_link (String reg_link)
-    {
-        this.reg_link = reg_link;
-    }
-
-    public String getCollateral ()
-    {
+    public String getCollateral() {
         return collateral;
     }
 
-    public void setCollateral (String collateral)
-    {
+    public void setCollateral(String collateral) {
         this.collateral = collateral;
     }
 
-    public String getScheme_name ()
-    {
-        return scheme_name;
+    public String getCityLocation() {
+        return cityLocation;
     }
 
-    public void setScheme_name (String scheme_name)
-    {
-        this.scheme_name = scheme_name;
+    public void setCityLocation(String cityLocation) {
+        this.cityLocation = cityLocation;
     }
 
-    public String getLattitude ()
-    {
+    public String getSourceOfGrants() {
+        return sourceOfGrants;
+    }
+
+    public void setSourceOfGrants(String sourceOfGrants) {
+        this.sourceOfGrants = sourceOfGrants;
+    }
+
+    public String getLattitude() {
         return lattitude;
     }
 
-    public void setLattitude (String lattitude)
-    {
+    public void setLattitude(String lattitude) {
         this.lattitude = lattitude;
     }
 
-    public String getLongitude ()
-    {
+    public String getLongitude() {
         return longitude;
     }
 
-    public void setLongitude (String longitude)
-    {
+    public void setLongitude(String longitude) {
         this.longitude = longitude;
     }
 
-    public String getCity_location ()
-    {
-        return city_location;
+    public String getRegLink() {
+        return regLink;
     }
 
-    public void setCity_location (String city_location)
-    {
-        this.city_location = city_location;
+    public void setRegLink(String regLink) {
+        this.regLink = regLink;
     }
 
-    public String getLoan_range ()
-    {
-        return loan_range;
-    }
-
-    public void setLoan_range (String loan_range)
-    {
-        this.loan_range = loan_range;
-    }
-
-    public String getSerial_number ()
-    {
-        return serial_number;
-    }
-
-    public void setSerial_number (String serial_number)
-    {
-        this.serial_number = serial_number;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "ClassPojo [sector = "+sector+", headed_by = "+headed_by+", source_of_grants = "+source_of_grants+", reg_link = "+reg_link+", collateral = "+collateral+", scheme_name = "+scheme_name+", lattitude = "+lattitude+", longitude = "+longitude+", city_location = "+city_location+", loan_range = "+loan_range+", serial_number = "+serial_number+"]";
-    }
 }
