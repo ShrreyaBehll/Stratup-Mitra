@@ -7,6 +7,7 @@
     <permission
         android:name="com.sih.startupmitra.googlemapsv2.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -49,7 +50,7 @@
         <activity android:name=".individual_register.RegisterAdhar" />
         <activity
             android:name=".individual_register.StartupRegisterActivity"
-            android:theme="@style/YourThemeForSingleInputFormActivity"></activity>
+            android:theme="@style/YourThemeForSingleInputFormActivity" />
 
         <service android:name=".fcm.MyFirebaseMessagingService">
             <intent-filter>
@@ -66,7 +67,9 @@
         <activity android:name=".Rec.Recomend" />
         <activity android:name=".ProfileActivity.ProfileActivity" />
         <activity android:name=".Rec.DetailedList" />
-        <activity android:name=".landing.Maps"></activity>
+        <activity android:name=".landing.Maps" />
+        <activity android:name=".landing.WebView" />
+        <activity android:name=".landing.Wb"></activity>
     </application>
 
 </manifest>

@@ -1,6 +1,7 @@
 package com.sih.startupmitra.api;
 
 
+import com.sih.startupmitra.pojo.Maps;
 import com.sih.startupmitra.pojo.MyPojo;
 
 import java.util.List;
@@ -20,5 +21,8 @@ public interface GeneralAPI {
             @Query("sector") String sector,
             @Query("loan_range") String loan_range,
             @Query("collateral") String collateral);
+
+    @GET("/app/schemes/")
+    Call<List<Maps>> getMaps();
 
 }
