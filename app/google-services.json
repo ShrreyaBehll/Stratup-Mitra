@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "643885938529",
+    "firebase_url": "https://startup-mitra.firebaseio.com",
+    "project_id": "startup-mitra",
+    "storage_bucket": "startup-mitra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643885938529:android:6b20a7a6eaa839b8",
+        "android_client_info": {
+          "package_name": "com.sih.startupmitra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643885938529-4cs3f5gi2bbsq59588oq8ccah1lgstet.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sih.startupmitra",
+            "certificate_hash": "9536c670089549a4d0d1df773bd1824e4575af21"
+          }
+        },
+        {
+          "client_id": "643885938529-8nap5vmnhl123irdvclivkjo7jj26csr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo1zPckPOap_XWcqAICxrITgOgjXPxpO0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "643885938529-8nap5vmnhl123irdvclivkjo7jj26csr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.google.firebase.FirebaseApp;
 import com.sih.startupmitra.individual_register.RegisterAdhar;
 
 public class SplashActivity extends AppCompatActivity {
@@ -15,6 +16,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         newSplash();
+        FirebaseApp.initializeApp(SplashActivity.this);
     }
 
     private void newSplash() {
