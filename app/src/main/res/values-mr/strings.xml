@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">स्टार्टअपमित्र</string>
+    <string name="slide_name_title">स्वागत आहे,</string>
+    <string name="subText"> आम्ही आपल्या स्टार्टअपला काय म्हणतो?</string>
+    <string name="name">नाव</string>
+    <string name="eg_98fit">उदा. 98fit</string>
+    <string name="pan_number">पॅन क्रमांक</string>
+    <string name="pan_number_hint"> उदा. EP *****</string>
+    <string name="last_name">आडनाव</string>
+    <string name="first_name"> पहिला  नाव</string>
+    <string name="gender">लिंग</string>
+    <string name="male">पुरुष</string>
+    <string name="female">स्त्री</string>
+    <string name="address">पत्ता</string>
+    <string name="city">शहर</string>
+    <string name="email">शहर</string>
+    <string name="email_error"> ईमेल</string>
+    <string name="email_errore"> ईमेल त्रुटी </string>
+    <string name="email_details">   ईमेल त्रुटी तपशील</string>
+    <string name="name_of_startup">  ईमेल तपशील</string>
+    <string name="enter_full_name"> स्टार्टअप नाव </string>
+    <string name="choose_industry">आपल्या स्टार्टअपचे पूर्ण नाव प्रविष्ट करा </string>
+    <string name="choose_resp_industry"> उद्योग निवडा </string>
+    <string name="eroor">त्रुटी</string>
+    <string name="choose_sector">सेक्टर निवडा </string>
+    <string name="reg_no">नोंदणी क्रमांक</string>
+    <string name="not_valid">वैध नाही</string>
+    <string name="reg_date">नोंदणी तारीख</string>
+    <string name="pan_no">स्टार्टअप पॅन क्रमांक</string>
+    <string name="enter_pan">आपल्या स्टार्टअप पॅन क्रमांकात प्रविष्ट करा</string>
+    <string name="enter_reg_no">आपला स्टार्टअप नोंदणी क्रमांक प्रविष्ट करा</string>
+    <string name="choose_category">श्रेणी निवडा </string>
+    <string name="choose_resp_category">आपल्या संबंधित श्रेणी निवडा</string>
+    <string name="choose_resp_sector">आपल्या संबंधित सेक्टरची निवड करा</string>
+    <string name="enter_startup_reg">आपले स्टार्टअप नोंदणी क्रमांक प्रविष्ट करा</string>
+    <string name="enter_reg_date">आपली स्टार्टअप नोंदणी तारीख प्रविष्ट करा</string>
+
+    <string-array name="industry_items">
+
+
+        <item>जाहिरात</item>
+        <item>आयटी सेवा</item>
+        <item>स्वास्थ्यसेवा आणि जीवनसत्वे</item>
+        <item>एरोनॉटिक्स / एरोस्पेस आणि डिफेंस  </item>
+        <item>शेती   </item>
+        <item> </item>
+        <item>विश्लेषण</item>.
+        <item>अॅनिमेशन  </item>
+        <item>एआर / व्हीआर (वाढीव + व्हर्च्युअल रियालिटी)</item>
+        <item>आर्किटेक्चर / इंटिरिअर डिझाइन </item>
+        <item>कला आणि छायाचित्रण</item>
+        <item>ऑटोमेटिव्ह</item>
+        <item>रसायन</item>
+        <item>दूरसंचार आणि नेटवर्किंग </item>
+        <item>संगणक दृष्टी</item>
+        <item>बांधकाम</item>
+        <item>डेटिंग / विवाह विषयक</item>
+        <item>डिझाइन</item>
+        <item>शिक्षण</item>
+        <item>अपारंपारिक ऊर्जा</item>
+        <item>नूतनीकरणक्षम ऊर्जा</item>
+        <item>ग्रीन टेक्नॉलॉजी</item>
+        <item>एंटरप्राइझ सॉफ्टवेअर</item>
+        <item>इव्हेंट</item>
+        <item>फॅशन</item>
+        <item>वित्त तंत्रज्ञान</item>
+        <item>अन्न आणि पेये</item>
+        <item>तंत्रज्ञान हार्डवेअर </item>
+        <item>स्वास्थ्यसेवा आणि जीवनसत्वे</item>
+    </string-array>
+
+    <string-array name="health_list">
+        <item>  वैद्यकीय उपकरणे / बायोमेडिकल</item>
+        <item> स्वास्थ्य आणि निरोगीपणा</item>
+        <item>   फार्मास्युटिकल </item>
+        <item> जैवतंत्रज्ञान</item>
+        <item>  स्वास्थ्य सेवा</item>
+        <item>हेल्थकेअर IT</item>
+        <item>स्वास्थ्यसेवा तंत्रज्ञान </item>
+    </string-array>
+
+    <string-array name="agriculture">
+
+        <item>डेअरी फार्मिंग</item>
+        <item>सेंद्रीय शेती</item>
+        <item>शेती-टेक</item>
+        <item>अन्न प्रक्रिया </item>
+    </string-array>
+
+    <string-array name="it_services">
+
+        <item>IT कन्सल्टिंग</item>
+        <item>बीपीओ </item>
+        <item>केपीओ</item>
+        <item>वेब डेव्हलपमेंट </item>
+        <item>उत्पादन विकास </item>
+        <item>अर्ज विकास</item>
+        <item>चाचणी</item>
+        <item>IT व्यवस्थापन</item>
+        <item>प्रकल्प व्यवस्थापन</item>
+    </string-array>
+
+
+    <string-array name="categories">
+        <item>परामर्श</item>
+        <item>ई-कॉमर्स </item>
+        <item>ग्राहक इंटरनेट</item>
+        <item>हायपरलोकल</item>
+        <item>सरकार</item>
+        <item>मार्केटप्लेस</item>
+        <item>मोबाइल</item>
+        <item>पीअर टू पीअर</item>
+        <item>सास</item>
+        <item>शेअरिंग इकॉनॉमी</item>
+        <item>सामाजिक एंटरप्राइज</item>
+        <item>इतर</item>
+
+    </string-array>
+
+
+    <string name="find_a_scheme_that_is_right_for_you"> आपल्यासाठी योग्य असलेली एक योजना शोधा </string>
+    <string name="register_your_startup">आपले स्टार्ट-अप नोंदवा </string>
+    <string name="News">आपल्या आजूबाजूच्या बातम्या आणि योजना </string>
+    <string name="maps">नकाशे</string>
+    <string name="start_up_mitra">स्टार्टअप मित्र</string>
+
+    <string name="start_up_name">स्टार्ट-अप नाव </string>
+    <string name="_98fit_pvt_ltd">98fit प्रा. लि</string>
+    <string name="qr_code">H2349</string>
+    <string name="qr_code_text">QR कोड</string>
+    <string name="welcome_to">मध्ये स्वागत आहे </string>
+    <string name="start_up_mitra_caps">स्टार्टअप मित्र</string>
+    <string name="your_startup_companion">आपले स्टार्टअप  सहकारी </string>
+    <string name="sector_industry">सेक्टर / उद्योग</string>
+    <string name="collateral">संपार्श्विक</string>
+    <string name="loan_range">कर्जाची श्रेणी</string>
+    <string name="other_info">इतर माहिती</string>
+    <string name="let_s_recommend">चला अनुशंसित करू</string>
+    <string name="all_of_start_up_one_platform">सर्व स्टार्ट-अप, एक प्लॅटफॉर्म</string>
+    <string name="startup_mitra">स्टार्टअप मित्र</string>
+    <string name="hello_there">हॅलो, तेथे</string>
+    <string name="what_is_you_adhaar_number">आपण नंबरचा आधार काय आहे?</string>
+    <string name="_1234_5678_9012">1234 5678 9012</string>
+    <string name="skip">वगळा</string>
+    <string name="proceed">पुढे जा </string>
+
+    <string name="sector">सेक्टर </string>
+    <string name="education">शिक्षण</string>
+    <string name="it_services">आईटी सेवा</string>
+    <string name="miscellaneous">विविध </string>
+    <string name="sec_agnostic">क्षेत्र-अज्ञेयवादी </string>
+    <string name="travel"><![CDATA[आरोग्य आणि जीवनशास्त्र]]></string>
+    <string name="energy">ऊर्जा</string>
+    <string name="health">आरोग्य आणि योग्यता</string>
+    <string name="option">---पर्याय--</string>
+    <string name="yes"> होय</string>
+    <string name="no">नाही</string>
+
+</resources>

@@ -10,6 +10,7 @@ import android.content.SharedPreferences;
 
 public class SharedPreference {
     private static SharedPreferences mSharedPref;
+    private static final String IS_FIRST_TIME_LAUNCH = "IsFirstTimeLaunch";
 
     private SharedPreference() {
 
@@ -18,6 +19,17 @@ public class SharedPreference {
     public static void init(Context context) {
         if (mSharedPref == null)
             mSharedPref = context.getSharedPreferences(context.getPackageName(), Activity.MODE_PRIVATE);
+    }
+
+    public static void setFirstTimeLaunch(boolean isFirstTime) {
+        SharedPreferences.Editor prefsEditor = mSharedPref.edit();
+        prefsEditor.putBoolean(IS_FIRST_TIME_LAUNCH, isFirstTime);
+        prefsEditor.apply();
+    }
+
+
+    public static boolean isFirstTimeLaunch() {
+        return mSharedPref.getBoolean(IS_FIRST_TIME_LAUNCH, true);
     }
 
 
@@ -79,6 +91,8 @@ public class SharedPreference {
     public static long read(String key, long defValue) {
         return mSharedPref.getLong(key, defValue);
     }
+
+
 
 
 

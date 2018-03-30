@@ -49,8 +49,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
             android:paddingLeft="5dp"
             android:paddingTop="5dp"
             android:weightSum="1">
@@ -105,7 +105,7 @@
                     android:layout_marginTop="20dp"
                     android:gravity="center"
 
-                    android:text="Hello, there"
+                    android:text="@string/hello_there"
                     android:textSize="12sp"
                     android:textStyle="bold" />
 
@@ -129,9 +129,9 @@
                     android:layout_marginTop="20dp"
                     android:lines="1"
 
+                    android:text="@string/what_is_you_adhaar_number"
                     android:textAppearance="?android:textAppearanceMedium"
                     android:textColor="#000"
-                    android:text="What is you adhaar number ? "
                     android:textStyle="normal" />
             </LinearLayout>
 
@@ -147,39 +147,40 @@
             android:layout_marginTop="30dp"
             android:background="@android:color/transparent"
             android:gravity="center"
+            android:hint="@string/_1234_5678_9012"
             android:paddingBottom="10dp"
-android:hint="1234 5678 9012" android:textSize="25sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </android.support.v7.widget.CardView>
 
 
-   <LinearLayout
+    <LinearLayout
 
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_alignParentBottom="true"
-       android:layout_alignParentLeft="true"
-       android:layout_alignParentStart="true">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
-       <Button
-           android:layout_weight="1"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:background="@color/material_black_26"
-           android:text="Skip"
-           android:textColor="#000"/>
-       <Button
-           android:id="@+id/aadhaar_proceed"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_weight="1"
-           android:background="@drawable/gradient"
-           android:text="Proceed"
-           android:textColor="#fff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/material_black_26"
+            android:text="@string/skip"
+            android:textColor="#000" />
 
-   </LinearLayout>
+        <Button
+            android:id="@+id/aadhaar_proceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/gradient"
+            android:text="@string/proceed"
+            android:textColor="#fff" />
 
+    </LinearLayout>
 
 
 </RelativeLayout>

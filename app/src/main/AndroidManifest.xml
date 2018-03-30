@@ -21,14 +21,16 @@
             <!-- </intent-filter> -->
 
         </activity>
-        <activity android:name=".individual_register.RegisterAdhar" />
+        <activity android:name=".individual_register.RegisterAdhar"
+            android:screenOrientation="portrait"/>
         <activity android:name=".individual_register.StartupRegisterActivity"
-            android:theme="@style/YourThemeForSingleInputFormActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:theme="@style/YourThemeForSingleInputFormActivity"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
 
 
@@ -43,10 +45,17 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".landing.Dashboard" />
-        <activity android:name=".Rec.Recomend" />
-        <activity android:name=".ProfileActivity.ProfileActivity" />
-        <activity android:name=".Rec.DetailedList"></activity>
+        <activity android:name=".landing.Dashboard"  android:screenOrientation="portrait"/>
+        <activity android:name=".Rec.Recomend" android:screenOrientation="portrait" />
+        <activity android:name=".ProfileActivity.ProfileActivity"  android:screenOrientation="portrait" />
+        <activity android:name=".Rec.DetailedList"  android:screenOrientation="portrait"/>
+        <activity android:name=".SetLanguage"  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

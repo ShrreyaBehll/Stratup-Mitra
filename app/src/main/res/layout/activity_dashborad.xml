@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".landing.Dashboard">
+
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -13,11 +15,16 @@
         android:layout_gravity="top"
         android:background="@drawable/gradient">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Start-Up Mitra"
-            android:textColor="#fff" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_up_mitra"
+                android:textColor="#fff" />
+
+
+
     </android.support.v7.widget.Toolbar>
 
     <FrameLayout
@@ -53,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18dp"
                 android:layout_marginTop="18dp"
-                android:text="Startup Mitra"
+                android:text="@string/startup_mitra"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="#000" />
 
@@ -80,7 +87,7 @@
                     android:id="@+id/startupNameTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Start-Up name"
+                    android:text="@string/start_up_name"
                     android:textAppearance="?android:attr/textAppearanceSmall" />
 
                 <TextView
@@ -88,7 +95,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="98fit Pvt. ltd"
+                    android:text="@string/_98fit_pvt_ltd"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#fff" />
             </LinearLayout>
@@ -106,15 +113,15 @@
                     android:id="@+id/industryTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Industry"
+                    android:text="@string/industry"
                     android:textAppearance="?android:attr/textAppearanceSmall" />
 
                 <TextView
-                    android:id="@+id/startupName"
+                    android:id="@id/startupName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Heath and Fitness"
+                    android:text="@string/health"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#fff" />
 
@@ -125,7 +132,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="180dp"
-                android:text="H2349"
+                android:text="@string/qr_code"
                 android:layout_marginRight="30dp"
                 android:layout_alignParentRight="true"
                 android:textAppearance="?android:attr/textAppearanceLarge"
@@ -150,7 +157,7 @@
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="80dp"
 
-                android:text="QR Code"
+                android:text="@string/qr_code_text"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="#000" />
 
@@ -242,13 +249,13 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
-                    android:id="@+id/breakfastbg"
+                    android:id="@id/breakfastbg"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/logobrekafast"
+                        android:id="@id/logobrekafast"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_alignParentLeft="true"
@@ -269,7 +276,7 @@
 
 
                         <TextView
-                            android:id="@+id/customFontTextView5"
+                            android:id="@id/customFontTextView5"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -307,13 +314,13 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
-                    android:id="@+id/breakfastbg"
+                    android:id="@id/breakfastbg"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/logobrekafast"
+                        android:id="@id/logobrekafast"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_alignParentLeft="true"
@@ -334,7 +341,7 @@
 
 
                         <TextView
-                            android:id="@+id/customFontTextView5"
+                            android:id="@id/customFontTextView5"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -373,13 +380,13 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
-                    android:id="@+id/breakfastbg"
+                    android:id="@id/breakfastbg"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/logobrekafast"
+                        android:id="@id/logobrekafast"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_alignParentLeft="true"
@@ -400,7 +407,7 @@
 
 
                         <TextView
-                            android:id="@+id/customFontTextView5"
+                            android:id="@id/customFontTextView5"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -421,4 +428,47 @@
         </android.support.v7.widget.CardView>
     </LinearLayout>
 
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/language_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        fab:menu_fab_label="Change Language"
+        fab:menu_icon="@drawable/ic_g_translate_white_24dp"
+        fab:menu_fab_size="normal"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/english_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_g_translate_white_24dp"
+            fab:fab_size="mini"
+            app:fab_colorNormal="#DA4336"
+            app:fab_colorPressed="#E75043"
+            app:fab_label="English"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/hindi_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+            app:fab_colorNormal="#DA4336"
+            app:fab_colorPressed="#E75043"
+            android:src="@drawable/ic_g_translate_white_24dp"
+            app:fab_label="@string/pickhindi"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/marathi_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+            app:fab_colorNormal="#DA4336"
+            app:fab_colorPressed="#E75043"
+            android:src="@drawable/ic_g_translate_white_24dp"
+            app:fab_label="@string/marathi"/>
+    </com.github.clans.fab.FloatingActionMenu>
 </RelativeLayout>

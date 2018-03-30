@@ -42,18 +42,18 @@ public class Recomend extends AppCompatActivity {
         ColateralSpinner = findViewById(R.id.radio);
         sector = new ArrayList<>();
         colateral = new ArrayList<>();
-        sector.add("Sector");
-        sector.add("Education");
-        sector.add("IT Services");
-        sector.add("Miscellaneous");
-        sector.add("Sector-agnostic");
-        sector.add("Travel & tourism");
-        sector.add("Energy");
-        sector.add("Healthcare & life sciences");
+        sector.add(getString(R.string.sector));
+        sector.add(getString(R.string.education));
+        sector.add(getString(R.string.it_services));
+        sector.add(getString(R.string.miscellaneous));
+        sector.add(getString(R.string.sec_agnostic));
+        sector.add(getString(R.string.travel));
+        sector.add(getString(R.string.energy));
+        sector.add(getString(R.string.health));
         spinnerSector.attachDataSource(sector);
-        colateral.add("---Option--");
-        colateral.add("Yes");
-        colateral.add("No");
+        colateral.add(getString(R.string.option));
+        colateral.add(getString(R.string.yes));
+        colateral.add(getString(R.string.no));
         ColateralSpinner.attachDataSource(colateral);
     }
 
