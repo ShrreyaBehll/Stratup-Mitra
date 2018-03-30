@@ -57,6 +57,9 @@ public class DetailedList extends AppCompatActivity {
         } else if (getData.getIntExtra("collateral", 0) == 1) {
             col = "no";
         }
+        Log.d("onResponse",col);
+        Log.d("onResponse",sec);
+
         GeneralAPI generalAPI = ApiClient.getClient().create(GeneralAPI.class);
         Call<MyPojo> call = generalAPI.getData(sec, Integer.parseInt(getData.getStringExtra("loan")), col);
         call.enqueue(new Callback<MyPojo>() {
