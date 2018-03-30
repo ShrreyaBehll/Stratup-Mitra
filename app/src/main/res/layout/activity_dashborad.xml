@@ -5,122 +5,218 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".landing.Dashboard">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/gradient" />
+
     <android.support.v7.widget.CardView
         android:id="@+id/card"
         android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:layout_below="@+id/text"
+        android:layout_height="250dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"
         android:padding="10dp"
-        app:cardCornerRadius="5dp">
+        app:cardCornerRadius="10dp">
 
-        <LinearLayout
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="20dp"
-            android:paddingLeft="5dp"
-            android:paddingTop="5dp"
-            android:weightSum="1">
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/gradient_blue" />
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="8dp"
-                android:layout_weight="0.3"
-                android:src="@drawable/emb" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="8dp"
-                android:layout_weight="0.7"
-                android:paddingLeft="20dp"
-                android:src="@drawable/goi" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:weightSum="1">
-
-            <ImageView
-                android:id="@+id/aadhaar_photo"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="17dp"
-                android:layout_weight="0.3"
-                android:src="@drawable/boy" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.7"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/aadhaar_details_textview"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"
-                    android:gravity="center"
-
-                    android:text="Hello, there"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/aadhaar_customer_dob"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
-                    android:text="Please enter you details to servve you better"
-                    android:textSize="12sp"
-                    android:textStyle="normal" />
-
-                <TextView
-                    android:id="@+id/aadhaar_line1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"
-                    android:lines="1"
-
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:textColor="#000"
-                    android:text="What is you adhaar number ? "
-                    android:textStyle="normal" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <EditText
-            android:id="@+id/aadhaar_number_textview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/aadhaar_customer_dob"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center|bottom"
-            android:layout_marginTop="30dp"
-            android:background="@android:color/transparent"
-            android:gravity="center"
-            android:paddingBottom="10dp"
-            android:hint="1234 5678 9012" android:textSize="25sp"
-            android:textStyle="normal" />
 
     </android.support.v7.widget.CardView>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/breakfast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            app:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/breakfastbg"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/logobrekafast"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:src="@drawable/boy"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/logobrekafast"
+                        android:orientation="vertical">
+                        <TextView android:id="@+id/customFontTextView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:lineSpacingExtra="18sp"
+                            android:text="@string/find_a_scheme_that_is_right_for_you"
+                            android:textColor="#293448"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/breakfast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            app:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/breakfastbg"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/logobrekafast"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:src="@drawable/boy"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/logobrekafast"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/customFontTextView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:lineSpacingExtra="18sp"
+                            android:text="@string/find_a_scheme_that_is_right_for_you"
+                            android:textColor="#293448"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/breakfast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            app:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/breakfastbg"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/logobrekafast"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:src="@drawable/boy"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/logobrekafast"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/customFontTextView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:lineSpacingExtra="18sp"
+                            android:text="@string/find_a_scheme_that_is_right_for_you"
+                            android:textColor="#293448"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
 </RelativeLayout>
