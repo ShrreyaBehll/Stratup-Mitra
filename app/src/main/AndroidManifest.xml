@@ -43,16 +43,16 @@
             android:value="AIzaSyBjsPnKrw6h3ZwN-GLU41lTE9wsnKorYfc" />
 
         <activity android:name=".SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".individual_register.RegisterAdhar" />
         <activity
             android:name=".individual_register.StartupRegisterActivity"
-            android:theme="@style/YourThemeForSingleInputFormActivity" />
+            android:theme="@style/YourThemeForSingleInputFormActivity" > <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
 
         <service android:name=".fcm.MyFirebaseMessagingService">
             <intent-filter>
