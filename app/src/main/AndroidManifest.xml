@@ -21,18 +21,21 @@
             <!-- </intent-filter> -->
 
         </activity>
-        <activity android:name=".individual_register.RegisterAdhar"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".individual_register.StartupRegisterActivity"
-            android:theme="@style/YourThemeForSingleInputFormActivity"
-            android:screenOrientation="portrait">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+        <activity
+            android:name=".individual_register.RegisterAdhar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".individual_register.StartupRegisterActivity"
+            android:screenOrientation="portrait"
+           android:theme="@style/YourThemeForSingleInputFormActivity">
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
-
 
         <service android:name=".fcm.MyFirebaseMessagingService">
             <intent-filter>
@@ -45,17 +48,29 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".landing.Dashboard"  android:screenOrientation="portrait"/>
-        <activity android:name=".Rec.Recomend" android:screenOrientation="portrait" />
-        <activity android:name=".ProfileActivity.ProfileActivity"  android:screenOrientation="portrait" />
-        <activity android:name=".Rec.DetailedList"  android:screenOrientation="portrait"/>
-        <activity android:name=".SetLanguage"  android:screenOrientation="portrait">
+        <activity
+            android:name=".landing.Dashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Rec.Recomend"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileActivity.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Rec.DetailedList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SetLanguage"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".individual_register.IndividualActivity"
+            android:theme="@style/YourThemeForSingleInputFormActivity"/>
     </application>
 
 </manifest>

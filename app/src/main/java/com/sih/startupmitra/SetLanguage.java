@@ -13,6 +13,8 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 
+import com.sih.startupmitra.individual_register.IndividualActivity;
+import com.sih.startupmitra.individual_register.StartupRegisterActivity;
 import com.sih.startupmitra.landing.Dashboard;
 import com.sih.startupmitra.util.CustomFontTextView;
 import com.sih.startupmitra.util.SharedPreference;
@@ -45,7 +47,7 @@ public class SetLanguage extends AppCompatActivity implements RadioGroup.OnCheck
         } else {
             Continue.setOnClickListener(v -> {
                 SharedPreference.setFirstTimeLaunch(false);
-                startActivity(new Intent(SetLanguage.this, Dashboard.class));
+                startActivity(new Intent(SetLanguage.this, IndividualActivity.class));
                 finish();
             });
         }

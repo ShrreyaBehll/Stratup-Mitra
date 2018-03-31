@@ -1,7 +1,10 @@
 package com.sih.startupmitra.Rec;
 
 import android.content.Intent;
+import android.icu.text.NumberFormat;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.util.Log;
@@ -14,8 +17,12 @@ import com.sih.startupmitra.R;
 
 import org.angmarch.views.NiceSpinner;
 
+import java.text.DecimalFormat;
+import java.text.Format;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class Recomend extends AppCompatActivity {
     List<String> sector;
@@ -25,6 +32,7 @@ public class Recomend extends AppCompatActivity {
     Button setting;
     NiceSpinner spinnerSector;
     NiceSpinner ColateralSpinner;
+    private String loan_amount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,11 +66,15 @@ public class Recomend extends AppCompatActivity {
     }
 
     private void setData() {
+
+        seekbar.setMax(5000000);
         seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 Log.d("Seekbar : ", String.valueOf(i));
-                loan.setText(String.valueOf(i));
+                loan_amount= String.valueOf(i);
+                loan.setText("₹ "+String.valueOf(i));
 
             }
 

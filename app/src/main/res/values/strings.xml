@@ -154,7 +154,7 @@
     <string name="it_services">IT Services</string>
     <string name="miscellaneous">Miscellaneous</string>
     <string name="sec_agnostic">Sector-agnostic</string>
-    <string name="travel"><![CDATA[Travel & tourism]]></string>
+    <string name="travel">Travel &amp; tourism</string>
     <string name="energy">Energy</string>
     <string name="health">Healthcare &amp; Fitness</string>
     <string name="option">---Option--</string>
@@ -162,4 +162,14 @@
     <string name="no">No</string>
     <string name="marathi">मराठी</string>
     <string name="industry">Industry</string>
+    <string name="password">Password</string>
+    <string name="password_error">Password length should be greater than 5</string>
+    <string name="password_details">Create Your Password</string>
+
+    <string name="name_details">Enter your name</string>
+
+    <string name="email_details_text">Enter your email address</string>
+    <string name="contact">Contact No.</string>
+
+    <string name="mobile_detail_text">Enter your mobile number</string>
 </resources>
