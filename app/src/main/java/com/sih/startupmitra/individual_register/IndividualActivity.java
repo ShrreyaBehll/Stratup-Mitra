@@ -68,7 +68,7 @@ public class IndividualActivity extends SingleInputFormActivity{
     @Override
     protected void onFormFinished(Bundle bundle) {
 
-        startActivity(new Intent(this,Dashboard.class));
+        startActivity(new Intent(this,RegisterAdhar.class));
         finish();
     }
 }
