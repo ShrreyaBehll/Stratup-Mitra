@@ -44,7 +44,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Welcome to"
+                android:text="@string/welcome_to"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="#fff"
                 android:visibility="invisible" />
@@ -52,7 +52,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="START-UP MITRA"
+                android:text="@string/start_up_mitra_caps"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="#fff"
                 android:textSize="30sp" />
@@ -60,7 +60,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Your startup companion"
+                android:text="@string/your_startup_companion"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="#fff" />
         </LinearLayout>
@@ -106,7 +106,7 @@
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
                             android:padding="3dp"
-                            android:src="@drawable/boy"
+                            android:src="@drawable/sector"
                             android:visibility="visible"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -121,7 +121,7 @@
                             android:layout_marginEnd="8dp"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
-                            android:text="Sector/Industry"
+                            android:text="@string/sector_industry"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:textColor="#000"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -210,7 +210,7 @@
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
                             android:padding="3dp"
-                            android:src="@drawable/boy"
+                            android:src="@drawable/property_icon"
                             android:visibility="visible"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -225,7 +225,7 @@
                             android:layout_marginEnd="8dp"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
-                            android:text="Colateral"
+                            android:text="@string/collateral"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:textColor="#000"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -316,7 +316,7 @@
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
                             android:padding="3dp"
-                            android:src="@drawable/boy"
+                            android:src="@drawable/loanrange"
                             android:visibility="visible"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -331,7 +331,7 @@
                             android:layout_marginEnd="8dp"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
-                            android:text="Loan Range"
+                            android:text="@string/loan_range"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:textColor="#000"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -345,7 +345,7 @@
                         <EditText
                             android:id="@+id/text_view_spinner"
                             android:layout_width="0dp"
-
+                            android:cursorVisible="false"
                             android:inputType="number"
                                    android:layout_height="wrap_content"
                             android:background="@drawable/btn"
@@ -433,7 +433,7 @@
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
                             android:padding="3dp"
-                            android:src="@drawable/boy"
+                            android:src="@drawable/others"
                             android:visibility="visible"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -448,7 +448,7 @@
                             android:layout_marginEnd="8dp"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
-                            android:text="Other Info"
+                            android:text="@string/other_info"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:textColor="#000"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -521,7 +521,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_marginBottom="20dp"
-        android:text="Let's Recommend"
+        android:text="@string/let_s_recommend"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:textColor="#fff"

@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StartupRegisterActivity extends SingleInputFormActivity {
-    private static final String DATA_KEY_EMAIL = "email";
+
     private static final String DATA_KEY_STARTUP_NAME = "startup";
     private static final String DATA_KEY_INDUSTRY = "industry";
     private static final String DATA_KEY_SECTOR = "sector";
