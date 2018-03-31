@@ -57,6 +57,19 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="#000" />
 
+            <TextView
+                android:id="@+id/share"
+                android:background="@drawable/button"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:text="Share"
+                android:gravity="center|end"
+                android:paddingLeft="20dp"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff" />
+
             <View
                 android:id="@+id/view"
                 android:layout_width="88dp"
@@ -88,7 +101,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="98fit Pvt. ltd"
+                    android:text="Forrest"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#fff" />
             </LinearLayout>
@@ -114,23 +127,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Heath and Fitness"
+                    android:text="Educatoin &amp; Technology"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#fff" />
 
 
             </LinearLayout>
+
             <TextView
                 android:id="@+id/startupNameNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="180dp"
-                android:text="H2349"
-                android:layout_marginRight="30dp"
                 android:layout_alignParentRight="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textStyle="bold"
-                android:textColor="@color/colorHeading" />
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="180dp"
+                android:text="3CCA39CA"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorHeading"
+                android:textStyle="bold" />
+
             <ImageView
                 android:id="@+id/qrCode_img"
                 android:layout_width="60dp"
@@ -298,6 +313,7 @@
             android:layout_marginRight="1dp"
             android:layout_marginTop="1dp"
             android:elevation="1dp"
+            android:visibility="gone"
             app:cardCornerRadius="4dp"
             app:cardElevation="1dp">
 

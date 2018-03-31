@@ -121,6 +121,7 @@
     <string name="find_a_scheme_that_is_right_for_you">Find a scheme that is right for you</string>
     <string name="register_your_startup">Register your Start-up</string>
     <string name="News">News and Schemes around you</string>
-    <string name="maps">Maps</string>
+    <string name="maps">Banks and Schemes around you</string>
     <string name="probono">Pro-Bono Service</string>
+    <string name="loanRange">Loan Range: Rs</string>
 </resources>
