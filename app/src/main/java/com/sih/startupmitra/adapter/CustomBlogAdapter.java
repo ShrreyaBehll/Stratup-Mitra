@@ -42,7 +42,7 @@ public class CustomBlogAdapter extends RecyclerView.Adapter<CustomBlogAdapter.My
         final MyPojo blogModel = list.get(position);
         holder.blog_title.setText(blogModel.getSchemeName());
         holder.blog_desc.setText(blogModel.getHeadedBy());
-        holder.location.setText("Loan Range: |Rs "+blogModel.getLoanRange());
+        holder.location.setText("Loan Range: Rs "+blogModel.getLoanRange());
         holder.itemView.setOnClickListener(view -> {
 //            Intent setToDetailedActivity = new Intent(context, BlogDetailedActivity.class);
 //            setToDetailedActivity.putExtra(Constants.Blog.Blog_URL, blogModel.getURL());

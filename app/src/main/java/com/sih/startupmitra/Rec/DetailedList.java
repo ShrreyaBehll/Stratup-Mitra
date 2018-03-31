@@ -94,13 +94,12 @@ public class DetailedList extends AppCompatActivity {
                     myPojo.setSector(schemeList.get(i).getSector());
                     myPojo.setRegLink(schemeList.get(i).getRegLink());
                     myPojo.setLoanRange(schemeList.get(i).getLoanRange());
+                    myPojo.setCityLocation(schemeList.get(i).getCityLocation());
                     list.add(myPojo);
 
                 }
                 CustomBlogAdapter customBlogAdapter = new CustomBlogAdapter(DetailedList.this,list);
                 RecyclerView.LayoutManager recycelrviewAdapterManager = new LinearLayoutManager(DetailedList.this);
-                DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(recycler_view.getContext(), DividerItemDecoration.VERTICAL);
-                recycler_view.addItemDecoration(dividerItemDecoration);
                 recycler_view.setLayoutManager(recycelrviewAdapterManager);
                 recycler_view.setAdapter(customBlogAdapter);
 
